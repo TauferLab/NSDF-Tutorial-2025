@@ -64,25 +64,33 @@ This tutorial can be executed in two different environments:
 
 Choose one of the two options below based on your preferred setup.
 
+<h3>Option 1: GitHub Codespaces (Recommended)</h3>
+  <p><strong>Requirements:</strong> A GitHub account. No software installation required.</p>
+  <p>
+    <a href="https://github.com/codespaces/new/TauferLab/NSDF-Tutorial-2025?devcontainer_path=.devcontainer/session+II/devcontainer.json">
+      <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces">
+    </a>
+  </p>
+  <ol>
+    <li>Use the <strong>main</strong> branch of the repository.</li>
+    <li>Repository: <code>TauferLab/NSDF-Tutorial-2025</code>.</li>
+    <li>Dev container: <code>NSDF Tutorial – Session II</code>.</li>
+    <li>Click <strong>Create Codespace</strong>.</li>
+  </ol>
+  <p>This process may take a few minutes. Once ready, run <code>Tutorial.ipynb</code> in Jupyter.</p>
+  <div align="center">
+    <img src="Materials/files/docs/codespaces.png" width="800">
+    <br><em>Figure 1. Creating GitHub Codespaces</em>
+  </div>
+  <div align="center">
+    <img src="Materials/files/docs/Creating_container.png" width="800">
+    <br><em>Figure 2. Setting up your Codespace</em>
+  </div>
+  <div align="center">
+    <img src="Materials/files/docs/vscode.png" width="800">
+    <br><em>Figure 3. VS Code interface in Codespaces</em>
+  </div>
 
-<h3>Option 1: Running the Tutorial with GitHub Codespaces</h3>
-
-<p><strong>💡 Note:</strong> A GitHub account is required for this option.</p>
-
-<p>Click the button below to open the tutorial in GitHub Codespaces:</p>
-<p><a href="https://github.com/TauferLab/NSDF-Tutorial-2025" target="_blank"><strong>Open in GitHub Codespaces</strong></a></p>
-
-<ol>
-  <li>Verify you're on the <strong>main</strong> branch of the repository.</li>
-  <li>Confirm the repository name is <code>TauferLab/NSDF-Tutorial-2025</code>.</li>
-  <li>Select the dev container configuration <strong>NSDF Tutorial – Session II</strong>.</li>
-  <li>Click <strong>Create Codespace</strong>.</li>
-</ol>
-
-<p><em>Note: This setup process may take a few minutes.</em></p>
-<p>Once the environment is ready, open and run <code>Tutorial.ipynb</code> using Jupyter Notebook in the Codespace.</p>
-
-<hr>
 
 ## Prerequisites
 
