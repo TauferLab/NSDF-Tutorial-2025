@@ -54,6 +54,17 @@ The slides introducing this tutorial can be downloaded [here](https://zenodo.org
 9. [Acknowledgments](#acknowledgments)
 
 
+## Running the Tutorial
+
+This tutorial can be executed in two different environments:
+
+- GitHub Codespaces – a cloud-based development environment that requires no local installation beyond a GitHub account.
+
+- Docker – a container-based approach that requires Git and Docker installed on your local machine.
+
+Choose one of the two options below based on your preferred setup.
+
+
 ## Prerequisites
 
 > :bulb: **Note:** These prerequisites are required to run the section 3 [Running the Tutorial with Docker](#running-the-tutorial-with-docker) if your not using docker please skip this section and continue with the section 2 [Running the Tutorial with GitHub Codespaces](#running-the-tutorial-with-github-codespaces)
