@@ -65,6 +65,25 @@ This tutorial can be executed in two different environments:
 Choose one of the two options below based on your preferred setup.
 
 
+<h3>Option 1: Running the Tutorial with GitHub Codespaces</h3>
+
+<p><strong>💡 Note:</strong> A GitHub account is required for this option.</p>
+
+<p>Click the button below to open the tutorial in GitHub Codespaces:</p>
+<p><a href="https://github.com/TauferLab/NSDF-Tutorial-2025" target="_blank"><strong>Open in GitHub Codespaces</strong></a></p>
+
+<ol>
+  <li>Verify you're on the <strong>main</strong> branch of the repository.</li>
+  <li>Confirm the repository name is <code>TauferLab/NSDF-Tutorial-2025</code>.</li>
+  <li>Select the dev container configuration <strong>NSDF Tutorial – Session II</strong>.</li>
+  <li>Click <strong>Create Codespace</strong>.</li>
+</ol>
+
+<p><em>Note: This setup process may take a few minutes.</em></p>
+<p>Once the environment is ready, open and run <code>Tutorial.ipynb</code> using Jupyter Notebook in the Codespace.</p>
+
+<hr>
+
 ## Prerequisites
 
 > :bulb: **Note:** These prerequisites are required to run the section 3 [Running the Tutorial with Docker](#running-the-tutorial-with-docker) if your not using docker please skip this section and continue with the section 2 [Running the Tutorial with GitHub Codespaces](#running-the-tutorial-with-github-codespaces)
