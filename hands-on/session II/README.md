@@ -91,7 +91,75 @@ Choose one of the two options below based on your preferred setup.
     <br><em>Figure 3. VS Code interface in Codespaces</em>
   </div>
 
+<h3>Option 2: Docker</h3>
+  <p><strong>Requirements:</strong> Git, Docker Desktop (v4.15.10 or newer), 8 GB RAM, 5 GB disk space</p>
+  <ol>
+    <li>
+      <a href="https://github.com/git-guides/install-git">Install Git</a> and
+      <a href="https://docs.docker.com/engine/install/">Install Docker Desktop</a>
+    </li>
+    <li>Open Docker Desktop before continuing.</li>
+    <li>Open terminal and run:
+      <pre><code>git clone https://github.com/nsdf-fabric/Tutorial_2024_IEEE_VIS.git
+cd Tutorial_2024_IEEE_VIS/session\ II/Materials/
+docker-compose up -d</code></pre>
+    </li>
+    <li>Open <a href="http://127.0.0.1:5000/lab/tree/Tutorial.ipynb">http://127.0.0.1:5000/lab/tree/Tutorial.ipynb</a> in a browser.</li>
+    <li>To stop the container:
+      <pre><code>docker-compose down</code></pre>
+    </li>
+  </ol>
 
+
+<h2 id="appendix">APPENDIX: Installing the Tutorial from Scratch</h2>
+<h3>Using Docker</h3>
+<pre><code>cd Materials
+docker build --platform linux/amd64 -t globalcomputinglab/somospie_openvisus .
+docker pull --platform linux/amd64 globalcomputinglab/somospie_openvisus:tutorial
+docker run -d -p 5000:5000 -p 8989:8989 --name tutorial --platform linux/amd64 globalcomputinglab/somospie_openvisus</code></pre>
+<p>Visit: <code>http://localhost:5000/</code></p>
+
+<h3>Using Your Local Machine</h3>
+<ol>
+    <li>Install <a href="https://www.anaconda.com/download/">Conda</a></li>
+    <li>Run:
+      <pre><code>cd Materials
+conda env create -f environment.yml
+conda activate NSDF-Tutorial
+cd GEOtiled/geotiled
+pip install -e .
+./setup_openvisuspy.sh
+jupyter notebook Tutorial.ipynb</code></pre>
+    </li>
+</ol>
+
+<h2 id="community">Community and Resources</h2>
+  <ul>
+    <li><a href="https://nsdf-workspace.slack.com/">Slack workspace</a></li>
+    <li><a href="https://github.com/nsdf-fabric/catalog-comparison-tool/issues">GitHub Discussions</a></li>
+    <li><a href="https://groups.google.com/g/nsdf">Mailing List</a></li>
+    <li><a href="https://twitter.com/FabricNsdf">Twitter: @FabricNsdf</a></li>
+  </ul>
+
+  <h2 id="publications">Related Publications</h2>
+  <ul>
+    <li><a href="https://dl.acm.org/doi/abs/10.1145/3588195.3595941">GEOtiled: HPDC 2023</a></li>
+    <li><a href="https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case">Earth Science Use Case: IEEE Cloud 2023</a></li>
+    <li><a href="https://ieeexplore.ieee.org/document/9041768">SOMOSPIE: eScience 2019</a></li>
+  </ul>
+
+<h2 id="license">Copyright and License</h2>
+  <p>&copy; 2024 Global Computing Lab. Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</p>
+
+<h2 id="authors">Authors</h2>
+  <p>Created by the <a href="https://nationalsciencedatafabric.org/contributors.html">NSDF</a> and SOMOSPIE teams. Contact: <a href="mailto:mtaufer@utk.edu">Michela Taufer</a></p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+  <p>Supported by NSF grants 2138811, 2103845, 2334945, 2138296, and 2331152.<br>
+  Thanks to Dataverse, Seal Storage, and the Vargas Lab.</p>
+
+
+-----
 ## Prerequisites
 
 > :bulb: **Note:** These prerequisites are required to run the section 3 [Running the Tutorial with Docker](#running-the-tutorial-with-docker) if your not using docker please skip this section and continue with the section 2 [Running the Tutorial with GitHub Codespaces](#running-the-tutorial-with-github-codespaces)
