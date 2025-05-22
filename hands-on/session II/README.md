@@ -134,6 +134,38 @@ jupyter notebook Tutorial.ipynb</code></pre>
 </ol>
 
 <h2 id="community">Community and Resources</h2>
+
+
+NSDF and SOMOSPIE are open-source projects. Questions, discussion, and contributions are welcome. Contributions can be anything from new packages to bug fixes, documentation, or even new core features.
+
+NSDF Resources:
+
+- **Slack workspace**: [nsdf-workspace](https://nsdf-workspace.slack.com/).
+- **Github Discussions**: [issues](https://github.com/nsdf-fabric/catalog-comparison-tool/issues): Discussions and Q&A.
+- **Mailing list**: [https://groups.google.com/g/nsdf](https://groups.google.com/g/nsdf) - nsdf@googlegroups.com
+- **Twitter**: [@FabricNsdf](https://twitter.com/FabricNsdf)
+
+OpenVisus Resources:
+
+- **Github:** [Open Source distribution of the ViSUS capabilities](https://github.com/sci-visus/openvisus)
+- **Webpage:** [VISUS - High performance Big Data Analysis and Visualization Solutions](https://visus.org/)
+
+SOMOSPIE Resources:
+
+- **GitHub:** [SOMOSPIE software](https://github.com/TauferLab/SOMOSPIE)
+- **Webpage:** [SOMOSPIE overview](https://globalcomputing.group/somospie)
+- **Questions:** Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu)
+
+## Related Publications
+
+[1] Roa, C., Olaya, P., Llamas, R., Vargas, R., Taufer, M. GEOtiled: A Scalable Workflow for Generating Large Datasets of High-Resolution Terrain Parameters. Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (2023). [link](https://dl.acm.org/doi/abs/10.1145/3588195.3595941)
+[2] Olaya, Paula and Luettgau, Jakob and Roa, Camila and Llamas, Richardo and Vargas, Rodrigo and Wen, Sophia and Chung, I-Hsin and Seelam, Seetharami and Park, Yoonho and Lofstead, Jay and others Enabling Scalability in the Cloud for Scientific Workflows: An Earth Science Use Case. IEEE International Conference on Cloud Computing (2023). [link](https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case)
+[3] D. Rorabaugh, M. Guevara, R. Llamas, J. Kitson, R. Vargas, and M. Taufer. SOMOSPIE: A modular SOil MOisture SPatial Inference Engine based on data-driven decisions. In Proceedings of the 2019 15th International Conference on eScience (eScience) (2019). [link](https://ieeexplore.ieee.org/document/9041768)
+[4] V. Pascucci and R. J. Frank, "Global Static Indexing for Real-Time Exploration of Very Large Regular Grids," SC '01: Proceedings of the 2001 ACM/IEEE Conference on Supercomputing, Denver, CO, USA, 2001, pp. 45-45, [link](http://doi.org/10.1145/582034.582036)
+[5] Pascucci, Valerio, et al. "The ViSUS visualization framework." High Performance Visualization. Chapman and Hall/CRC, 2012. 439-452. [link](https://www.taylorfrancis.com/chapters/edit/10.1201/b12985-32/visus-visualization-frame[…]a-gyulassy-cameron-christensen-sujin-philip-sidharth-kumar)
+[6] Brian Summa, Giorgio Scorzelli, Ming Jiang, Peer-Timo Bremer, and Valerio Pascucci. 2011. Interactive editing of massive imagery made simple: Turning Atlanta into Atlantis. ACM Trans. Graph. 30, 2, Article 7 (April 2011), 13 pages. [link](https://doi.org/10.1145/1944846.1944847)
+
+<!-- 
   <ul>
     <li><a href="https://nsdf-workspace.slack.com/">Slack workspace</a></li>
     <li><a href="https://github.com/nsdf-fabric/catalog-comparison-tool/issues">GitHub Discussions</a></li>
@@ -147,6 +179,7 @@ jupyter notebook Tutorial.ipynb</code></pre>
     <li><a href="https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case">Earth Science Use Case: IEEE Cloud 2023</a></li>
     <li><a href="https://ieeexplore.ieee.org/document/9041768">SOMOSPIE: eScience 2019</a></li>
   </ul>
+--> 
 
 <h2 id="license">Copyright and License</h2>
   <p>&copy; 2024 Global Computing Lab. Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</p>
@@ -158,7 +191,7 @@ jupyter notebook Tutorial.ipynb</code></pre>
   <p>Supported by NSF grants 2138811, 2103845, 2334945, 2138296, and 2331152.<br>
   Thanks to Dataverse, Seal Storage, and the Vargas Lab.</p>
 
-
+<!-- 
 -----
 ## Prerequisites
 
@@ -435,3 +468,4 @@ The authors of this tutorial would like to express their gratitude to:
 - Vargas Lab led by Dr. Rodrigo Vargas [link](https://www.udel.edu/academics/colleges/canr/departments/plant-and-soil-sciences/faculty-staff/rodrigo-vargas/)
 
 Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+-> 
