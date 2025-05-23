@@ -45,16 +45,16 @@ You can download the introductory slides [here](https://zenodo.org/records/10794
 
 1. [Running the Tutorial] (#running-the-tutorial)
 2. [Option 1: GitHub Codespaces (Recommended)](#option-1-GitHub-codespaces-recommended)
-3. [Running the Tutorial with Docker](#running-the-tutorial-with-docker)
-4. [APPENDIX: Prerequities for Docker](#APPENDIX-prerequities-for-docker)
+3. [Option 2: Docker](#0ption-2-docker)
+4. [APPENDIX: Prerequities for Docker](#appendix-prerequities-for-docker)
 5. [Community and Resources](#community-and-resources)
 7. [Publications](#publications)
 8. [Copyright and License](#copyright-and-license)
 9. [Authors](#authors)
 10. [Acknowledgments](#acknowledgments)
 
-## Running the Tutorial
 
+## Running the Tutorial
 This tutorial can be executed in two different environments:
 
 - GitHub Codespaces – a cloud-based development environment that requires no local installation beyond a GitHub account.
@@ -62,6 +62,7 @@ This tutorial can be executed in two different environments:
 - Docker – a container-based approach that requires Git and Docker installed on your local machine.
 
 You can choose one of the two options below based on your preferred setup.
+
 
 ## Option 1: GitHub Codespaces (Recommended)
   <p><strong>Requirements:</strong> A GitHub account. No software installation required.</p>
@@ -90,6 +91,7 @@ You can choose one of the two options below based on your preferred setup.
     <br><em>Figure 3. VS Code interface in Codespaces</em>
   </div>
 
+
 ## Option 2: Docker
   <p><strong>Requirements:</strong> Git, Docker Desktop (v4.15.10 or newer), 8 GB RAM, 5 GB disk space (See Appendix for more information on the installation.</p>
   <ol>
@@ -109,7 +111,6 @@ docker-compose up -d</code></pre>
     </li>
   </ol>
 
-<h2 id="appendix">APPENDIX: Installing the Tutorial from Scratch</h2>
 
 ## APPENDIX: Prerequisites
 
@@ -188,7 +189,8 @@ jupyter notebook Tutorial.ipynb</code></pre>
 
 NSDF and SOMOSPIE are open-source projects. Questions, discussions, and contributions are welcome. Contributions can include new packages, bug fixes, documentation, or even new core features.
 
-## Resources:
+
+## Community and Resources:
 
 NSDF Resources:
 
@@ -214,6 +216,7 @@ GEOtiled Resources:
 - **Webpage:** [GEOtiled overview](https://github.com/TauferLab/GEOtiled))
 - **Questions:** Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu)
 
+
 ## Publications
 
 [1] Roa, C., Olaya, P., Llamas, R., Vargas, R., Taufer, M. GEOtiled: A Scalable Workflow for Generating Large Datasets of High-Resolution Terrain Parameters. Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (2023). [link](https://dl.acm.org/doi/abs/10.1145/3588195.3595941)
@@ -228,6 +231,7 @@ GEOtiled Resources:
 
 [6] Brian Summa, Giorgio Scorzelli, Ming Jiang, Peer-Timo Bremer, and Valerio Pascucci. 2011. Interactive editing of massive imagery made simple: Turning Atlanta into Atlantis. ACM Trans. Graph. 30, 2, Article 7 (April 2011), 13 pages. [link](https://doi.org/10.1145/1944846.1944847)
 
+
 ## Copyright and License
 
 Copyright (c) 2024, Global Computing Lab
@@ -235,9 +239,11 @@ Copyright (c) 2024, Global Computing Lab
 Catalog Comparison Tool is distributed under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) with LLVM Exceptions.
 See [LICENSE](Materials/LICENSE) for more details.
 
+
 ## Authors
 
 This project was created by the [NSDF team](https://nationalsciencedatafabric.org/contributors.html) and the SOMOSPIE team. To reach out email us at [info@nationalsciencedatafabric.org](email:info@nationalsciencedatafabric.org) and Dr. Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu).
+
 
 ## Acknowledgments
 
