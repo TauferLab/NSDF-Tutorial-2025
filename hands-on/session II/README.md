@@ -41,18 +41,18 @@ You can download the introductory slides [here](https://zenodo.org/records/10794
 
 ---
 
-## Table of content
+## Table of contents
 
-1. [Prerequisites](#prerequisites)
+1. [Running the Tutorial] (#running-the-tutorial)
 2. [Running the Tutorial with GitHub Codespaces](#running-the-tutorial-with-github-codespaces)
-3. [Running the Tutorial with Docker](#running-the-tutorial-with-docker)
+4. [Running the Tutorial with Docker](#running-the-tutorial-with-docker)
 4. [APPENDIX: Installing the Tutorial from the Beginning ](#appendix-installing-the-tutorial-from-the-beginning)
-5. [Community and Resources](#community-and-resources)
-6. [Related Publications](#related-publications)
-7. [Copyright and License](#copyright-and-license)
-8. [Authors](#authors)
-9. [Acknowledgments](#acknowledgments)
-
+5. [APPENDIX: Prerequities for Docker] (#prerequities-for-docker)
+6. [Community and Resources](#community-and-resources)
+7. [Related Publications](#related-publications)
+8. [Copyright and License](#copyright-and-license)
+9. [Authors](#authors)
+10. [Acknowledgments](#acknowledgments)
 
 ## Running the Tutorial
 
@@ -62,9 +62,9 @@ This tutorial can be executed in two different environments:
 
 - Docker – a container-based approach that requires Git and Docker installed on your local machine.
 
-Choose one of the two options below based on your preferred setup.
+You can choose one of the two options below based on your preferred setup.
 
-<h3>Option 1: GitHub Codespaces (Recommended)</h3>
+## Option 1: GitHub Codespaces (Recommended)
   <p><strong>Requirements:</strong> A GitHub account. No software installation required.</p>
   <p>
     <a href="https://github.com/codespaces/new/TauferLab/NSDF-Tutorial-2025?devcontainer_path=.devcontainer/session+II/devcontainer.json">
@@ -91,8 +91,8 @@ Choose one of the two options below based on your preferred setup.
     <br><em>Figure 3. VS Code interface in Codespaces</em>
   </div>
 
-<h3>Option 2: Docker</h3>
-  <p><strong>Requirements:</strong> Git, Docker Desktop (v4.15.10 or newer), 8 GB RAM, 5 GB disk space</p>
+## Option 2: Docker
+  <p><strong>Requirements:</strong> Git, Docker Desktop (v4.15.10 or newer), 8 GB RAM, 5 GB disk space (See Appendix for more information on the installation.</p>
   <ol>
     <li>
       <a href="https://github.com/git-guides/install-git">Install Git</a> and
@@ -110,8 +110,60 @@ docker-compose up -d</code></pre>
     </li>
   </ol>
 
-
 <h2 id="appendix">APPENDIX: Installing the Tutorial from Scratch</h2>
+
+## APPENDIX: Prerequisites
+
+> :bulb: ONLY IF YOU RUN THE TUTORIAL WITH DOCKER
+ 
+To install Git and Docker Desktop on your computer, follow these steps:
+
+- **To install Git**: Follow the [installation instructions](https://github.com/git-guides/install-git) for your operating system (Linux, Windows, or Mac).
+- **To install Docker Desktop**: Follow the [installation instructions](https://docs.docker.com/engine/install/) for your operating system (Linux, Windows, or Mac). -
+- **_Be sure you are running the most recent version of Docker! Previous versions to 4.15.10 may not work._**
+
+After installation, confirm that both tools are correctly set up by executing the following commands in your terminal.
+
+> :bulb: **Note:** For Windows users, we recommend using the [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) terminal for these verifications.
+
+- To verify the GitHub installation:
+
+```
+# Check the Git version
+git --version
+```
+
+Expected output (NOTE: git version can be different):
+
+```
+git version 3.12.0
+```
+
+- To verify Docker Desktop installation: Open the Docker Desktop application before running Docker commands.
+
+```
+# Check the Docker installation information
+docker info
+```
+
+Expected output:
+
+```
+Client:
+ Version:    24.0.5
+ Context:    default
+ Debug Mode: false
+
+Server:
+ Containers: 120
+  Running: 0
+  Paused: 0
+  Stopped: 120
+ Images: 48
+```
+
+> :bulb: **Note:** The specific numbers in the output might vary based on your installation details and additional information may also appear.
+
 <h3>Using Docker</h3>
 <pre><code>cd Materials
 docker build --platform linux/amd64 -t globalcomputinglab/somospie_openvisus .
@@ -135,15 +187,16 @@ jupyter notebook Tutorial.ipynb</code></pre>
 
 <h2 id="community">Community and Resources</h2>
 
+NSDF and SOMOSPIE are open-source projects. Questions, discussions, and contributions are welcome. Contributions can include new packages, bug fixes, documentation, or even new core features.
 
-NSDF and SOMOSPIE are open-source projects. Questions, discussion, and contributions are welcome. Contributions can be anything from new packages to bug fixes, documentation, or even new core features.
+## Resources:
 
 NSDF Resources:
 
 - **Slack workspace**: [nsdf-workspace](https://nsdf-workspace.slack.com/).
 - **Github Discussions**: [issues](https://github.com/nsdf-fabric/catalog-comparison-tool/issues): Discussions and Q&A.
 - **Mailing list**: [https://groups.google.com/g/nsdf](https://groups.google.com/g/nsdf) - nsdf@googlegroups.com
-- **Twitter**: [@FabricNsdf](https://twitter.com/FabricNsdf)
+- **LinkedIN**: [LinkedIn](https://www.linkedin.com/company/76216771/admin/dashboard/)) 
 
 OpenVisus Resources:
 
@@ -156,11 +209,17 @@ SOMOSPIE Resources:
 - **Webpage:** [SOMOSPIE overview](https://globalcomputing.group/somospie)
 - **Questions:** Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu)
 
-## Related Publications
+GEOtiled Resources:
+
+- **GitHub:** [GEOtiled software](https://github.com/TauferLab/GEOtiled))
+- **Webpage:** [GEOtiled overview](https://github.com/TauferLab/GEOtiled))
+- **Questions:** Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu)
+
+## Publications
 
 [1] Roa, C., Olaya, P., Llamas, R., Vargas, R., Taufer, M. GEOtiled: A Scalable Workflow for Generating Large Datasets of High-Resolution Terrain Parameters. Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (2023). [link](https://dl.acm.org/doi/abs/10.1145/3588195.3595941)
 
-[2] Olaya, Paula and Luettgau, Jakob and Roa, Camila and Llamas, Richardo and Vargas, Rodrigo and Wen, Sophia and Chung, I-Hsin and Seelam, Seetharami and Park, Yoonho and Lofstead, Jay and others Enabling Scalability in the Cloud for Scientific Workflows: An Earth Science Use Case. IEEE International Conference on Cloud Computing (2023). [link](https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case)
+[2] Olaya, Paula, and Luettgau, Jakob, and Roa, Camila, and Llamas, Richardo, and Vargas, Rodrigo, and Wen, Sophia, and Chung, I-Hsin, and Seelam, Seetharami, and Park, Yoonho, and Lofstead, Jay, and others. Enabling Scalability in the Cloud for Scientific Workflows: An Earth Science Use Case. IEEE International Conference on Cloud Computing (2023). [link](https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case)
 
 [3] D. Rorabaugh, M. Guevara, R. Llamas, J. Kitson, R. Vargas, and M. Taufer. SOMOSPIE: A modular SOil MOisture SPatial Inference Engine based on data-driven decisions. In Proceedings of the 2019 15th International Conference on eScience (eScience) (2019). [link](https://ieeexplore.ieee.org/document/9041768)
 
@@ -169,6 +228,29 @@ SOMOSPIE Resources:
 [5] Pascucci, Valerio, et al. "The ViSUS visualization framework." High Performance Visualization. Chapman and Hall/CRC, 2012. 439-452. [link](https://www.taylorfrancis.com/chapters/edit/10.1201/b12985-32/visus-visualization-frame[…]a-gyulassy-cameron-christensen-sujin-philip-sidharth-kumar)
 
 [6] Brian Summa, Giorgio Scorzelli, Ming Jiang, Peer-Timo Bremer, and Valerio Pascucci. 2011. Interactive editing of massive imagery made simple: Turning Atlanta into Atlantis. ACM Trans. Graph. 30, 2, Article 7 (April 2011), 13 pages. [link](https://doi.org/10.1145/1944846.1944847)
+
+## Copyright and License
+
+Copyright (c) 2024, Global Computing Lab
+
+Catalog Comparison Tool is distributed under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) with LLVM Exceptions.
+See [LICENSE](Materials/LICENSE) for more details.
+
+## Authors
+
+This project was created by the [NSDF team](https://nationalsciencedatafabric.org/contributors.html) and the SOMOSPIE team. To reach out email us at [info@nationalsciencedatafabric.org](email:info@nationalsciencedatafabric.org) and Dr. Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu).
+
+## Acknowledgments
+
+The authors of this tutorial would like to express their gratitude to:
+
+- NSF through the awards 2138811, 2103845, 2334945, 2138296, and 2331152.
+- The Dataverse team [link](https://dataverse.org/about)
+- The Seal Storage team [link](https://www.sealstorage.io/home/#team)
+- Vargas Lab led by Dr. Rodrigo Vargas [link](https://www.udel.edu/academics/colleges/canr/departments/plant-and-soil-sciences/faculty-staff/rodrigo-vargas/)
+
+Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
 
 <!-- 
   <ul>
@@ -184,7 +266,7 @@ SOMOSPIE Resources:
     <li><a href="https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case">Earth Science Use Case: IEEE Cloud 2023</a></li>
     <li><a href="https://ieeexplore.ieee.org/document/9041768">SOMOSPIE: eScience 2019</a></li>
   </ul>
---> 
+
 
 <h2 id="license">Copyright and License</h2>
   <p>&copy; 2024 Global Computing Lab. Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</p>
@@ -195,6 +277,7 @@ SOMOSPIE Resources:
 <h2 id="acknowledgments">Acknowledgments</h2>
   <p>Supported by NSF grants 2138811, 2103845, 2334945, 2138296, and 2331152.<br>
   Thanks to Dataverse, Seal Storage, and the Vargas Lab.</p>
+--> 
 
 <!-- 
 -----
