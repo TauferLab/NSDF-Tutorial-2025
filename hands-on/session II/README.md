@@ -44,12 +44,11 @@ You can download the introductory slides [here](https://zenodo.org/records/10794
 ## Table of contents
 
 1. [Running the Tutorial] (#running-the-tutorial)
-2. [Running the Tutorial with GitHub Codespaces](#running-the-tutorial-with-github-codespaces)
-4. [Running the Tutorial with Docker](#running-the-tutorial-with-docker)
-4. [APPENDIX: Installing the Tutorial from the Beginning ](#appendix-installing-the-tutorial-from-the-beginning)
-5. [APPENDIX: Prerequities for Docker] (#prerequities-for-docker)
-6. [Community and Resources](#community-and-resources)
-7. [Related Publications](#related-publications)
+2. [Option 1: GitHub Codespaces (Recommended)](#option-1-GitHub-codespaces-recommended)
+3. [Running the Tutorial with Docker](#running-the-tutorial-with-docker)
+4. [APPENDIX: Prerequities for Docker](#APPENDIX-prerequities-for-docker)
+5. [Community and Resources](#community-and-resources)
+7. [Publications](#publications)
 8. [Copyright and License](#copyright-and-license)
 9. [Authors](#authors)
 10. [Acknowledgments](#acknowledgments)
