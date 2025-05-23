@@ -21,17 +21,17 @@
 
 ## Overview
 
-This tutorial introduces [OpenVisus](https://github.com/sci-visus/OpenVisus), an [NSDF](https://nationalsciencedatafabric.org/) service that improves the way scientific data is accessed, analyzed, and visualized using cloud technologies. The tutorial provides step-by-step guidance using a module of the [SOMOSPIE](https://globalcomputing.group/somospie/) engine to collect raw data from a public source, like the USDA portal. This data is then converted into multiple files for analysis with NSDF and for storage on both public and private platforms. The module used is [GEOtiled](https://github.com/TauferLab/GEOtiled), the first step in the SOMOSPIE process, which efficiently calculates terrain attributes over large areas from digital elevation models (DEMs), maintaining high accuracy.
+This tutorial introduces the [NSDF](https://nationalsciencedatafabric.org/) ecosystem, which enhances scientific data access, analysis, and visualization through cloud technologies. It provides step-by-step guidance using a module of the [SOMOSPIE](https://globalcomputing.group/somospie/) engine called [GEOtiled](https://github.com/TauferLab/GEOtiled) to retrieve raw data from public sources, such as the [USGS](https://www.usgs.gov/) portal and efficiently computes terrain attributes from digital elevation models (DEMs) across large geographic areas while preserving accuracy. The data is processed into multiple files for analysis using NSDF services and stored across both public and private platforms.
 
-Throughout the tutorial, you will learn how to:
+By the end of the tutorial, you will learn how to:
 
-- **Construct a modular workflow** that combines your application components with NSDF services.
+- **Build a modular workflow** that integrates your application with NSDF services
 
-- **Upload, download, and stream data** to and from **public and private storage** solutions.
+- ***Upload, download, and stream data** across **public and private storage** platforms
 
-- Deploy the NSDF dashboard for **large-scale data access, visualization, and analysis**.
+- Use the NSDF dashboard for **large-scale data access, visualization, and analysis**.
 
-The slides introducing this tutorial can be downloaded [here](https://zenodo.org/records/10794642). This tutorial follows the steps in Figure 1.
+You can download the introductory slides [here](https://zenodo.org/records/10794642). The tutorial follows the process shown in Figure 1.
 
 <p align="center">
     <img src="Materials/files/docs/arq.png" width="800">
