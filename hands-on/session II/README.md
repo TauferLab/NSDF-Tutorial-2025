@@ -43,7 +43,7 @@ You can download the introductory slides [here](https://zenodo.org/records/10794
 
 ## Table of contents
 
-1. [Running the Tutorial] (#running-the-tutorial)
+1. [Running the Tutorial](#running-the-tutorial)
 2. [Option 1: GitHub Codespaces (Recommended)](#option-1-GitHub-codespaces-recommended)
 3. [Option 2: Docker](#0ption-2-docker)
 4. [APPENDIX: Prerequities for Docker](#appendix-prerequities-for-docker)
@@ -101,8 +101,8 @@ You can choose one of the two options below based on your preferred setup.
     </li>
     <li>Open Docker Desktop before continuing.</li>
     <li>Open terminal and run:
-      <pre><code>git clone https://github.com/nsdf-fabric/Tutorial_2024_IEEE_VIS.git
-cd Tutorial_2024_IEEE_VIS/session\ II/Materials/
+      <pre><code>git clone https://github.com/TauferLab/NSDF-Tutorial-2025.git
+cd NSDF-Tutorial-2025/session\ II/Materials/
 docker-compose up -d</code></pre>
     </li>
     <li>Open <a href="http://127.0.0.1:5000/lab/tree/Tutorial.ipynb">http://127.0.0.1:5000/lab/tree/Tutorial.ipynb</a> in a browser.</li>
@@ -185,12 +185,10 @@ jupyter notebook Tutorial.ipynb</code></pre>
     </li>
 </ol>
 
-<h2 id="community">Community and Resources</h2>
+## Community and Resources:
 
 NSDF and SOMOSPIE are open-source projects. Questions, discussions, and contributions are welcome. Contributions can include new packages, bug fixes, documentation, or even new core features.
 
-
-## Community and Resources:
 
 NSDF Resources:
 
@@ -212,8 +210,8 @@ SOMOSPIE Resources:
 
 GEOtiled Resources:
 
-- **GitHub:** [GEOtiled software](https://github.com/TauferLab/GEOtiled))
-- **Webpage:** [GEOtiled overview](https://github.com/TauferLab/GEOtiled))
+- **GitHub:** [GEOtiled software](https://github.com/TauferLab/GEOtiled)
+- **Webpage:** [GEOtiled overview](https://github.com/TauferLab/GEOtiled)
 - **Questions:** Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu)
 
 
@@ -251,7 +249,6 @@ The authors of this tutorial would like to express their gratitude to:
 
 - NSF through the awards 2138811, 2103845, 2334945, 2138296, and 2331152.
 - The Dataverse team [link](https://dataverse.org/about)
-- The Seal Storage team [link](https://www.sealstorage.io/home/#team)
 - Vargas Lab led by Dr. Rodrigo Vargas [link](https://www.udel.edu/academics/colleges/canr/departments/plant-and-soil-sciences/faculty-staff/rodrigo-vargas/)
 
 Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
@@ -281,7 +278,7 @@ Any opinions, findings, conclusions, or recommendations expressed in this materi
 
 <h2 id="acknowledgments">Acknowledgments</h2>
   <p>Supported by NSF grants 2138811, 2103845, 2334945, 2138296, and 2331152.<br>
-  Thanks to Dataverse, Seal Storage, and the Vargas Lab.</p>
+  Thanks to Dataverse, Wasabi, and the Vargas Lab.</p>
 --> 
 
 <!-- 
@@ -557,7 +554,6 @@ The authors of this tutorial would like to express their gratitude to:
 
 - NSF through the awards 2138811, 2103845, 2334945, 2138296, and 2331152.
 - The Dataverse team [link](https://dataverse.org/about)
-- The Seal Storage team [link](https://www.sealstorage.io/home/#team)
 - Vargas Lab led by Dr. Rodrigo Vargas [link](https://www.udel.edu/academics/colleges/canr/departments/plant-and-soil-sciences/faculty-staff/rodrigo-vargas/)
 
 Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
