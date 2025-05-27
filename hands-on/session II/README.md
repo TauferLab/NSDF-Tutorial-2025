@@ -19,11 +19,11 @@
 <a href="https://doi.org/10.1145/1944846.1944847"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1145/1944846.1944847.svg"></a>
 </p>
 
-<a href="https://nationalsciencedatafabric.org/" target="_blank" rel="noreferrer">NSDF</a>
+
 
 ## Overview
 
-This tutorial introduces the NSDF ecosystem, which enhances scientific data access, analysis, and visualization through cloud technologies. It provides step-by-step guidance using a module of the [SOMOSPIE](https://globalcomputing.group/somospie/) engine called [GEOtiled](https://github.com/TauferLab/GEOtiled) to retrieve raw data from public sources, such as the [USGS](https://www.usgs.gov/) portal and efficiently computes terrain attributes from digital elevation models (DEMs) across large geographic areas while preserving accuracy. The data is processed into multiple files for analysis using NSDF services and stored across both public and private platforms.
+This tutorial introduces the <a href="https://nationalsciencedatafabric.org/" target="_blank" rel="noreferrer">NSDF</a> ecosystem, which enhances scientific data access, analysis, and visualization through cloud technologies. It provides step-by-step guidance using a module of the [SOMOSPIE](https://globalcomputing.group/somospie/) engine called [GEOtiled](https://github.com/TauferLab/GEOtiled) to retrieve raw data from public sources, such as the [USGS](https://www.usgs.gov/) portal and efficiently computes terrain attributes from digital elevation models (DEMs) across large geographic areas while preserving accuracy. The data is processed into multiple files for analysis using NSDF services and stored across both public and private platforms.
 
 By the end of the tutorial, you will learn how to:
 
