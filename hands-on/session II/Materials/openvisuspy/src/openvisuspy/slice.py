@@ -470,8 +470,20 @@ class Slice(param.Parameterized):
 			logger.info(f"Updating range with selected area vmin={vmin} vmax={vmax}")
 		p = figure(x_range=(self.selected_physic_box[0][0], self.selected_physic_box[0][1]), y_range=(self.selected_physic_box[1][0], self.selected_physic_box[1][1]))
 		palette_name = self.palette.value_name 
-		mapper = LinearColorMapper(palette=palette_name, low=self.range_min.value, high=self.range_max.value)
-        
+		cmapper_type= self.color_mapper_type.value
+		if cmapper_type == "linear":
+			mapper = LinearColorMapper(palette=palette_name, low=self.range_min.value, high=self.range_max.value)
+		elif cmapper_type == "log":
+			color_mapper_type=self.color_mapper_type.value
+			assert(color_mapper_type in ["linear","log"])
+			is_log=color_mapper_type=="log"
+			palette=self.palette.value
+			low =cdouble(self.range_min.value)
+			high=cdouble(self.range_max.value)
+			mapper_low =max(EPSILON, low ) if is_log else low
+			mapper_high=max(EPSILON, high) if is_log else high
+			mapper =bokeh.models.LogColorMapper   (palette=palette, low=mapper_low, high=mapper_high)
+
 		data_flipped = data # Flip data to match imshow orientation
 		source = ColumnDataSource(data=dict(image=[data_flipped]))
 		dw = abs(self.selected_physic_box[0][1] -self.selected_physic_box[0][0])

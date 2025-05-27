@@ -10,7 +10,7 @@ if __name__.startswith("bokeh"):
     logger.info(f"GetBackend()={GetBackend()}")
 
     if os.environ.get("DATA") == "remote":
-        remote_dir = "https://maritime.sealstorage.io/api/v0/s3/utah/nsdf/somospie/terrain_tennessee/Tennessee_terrain_parameters.idx?access_key=any&secret_key=any&endpoint_url=https://maritime.sealstorage.io/api/v0/s3&cached=arco"
+        remote_dir = "https://s3.us-east-1.wasabisys.com/scientistcloud/utk/nsdf_somospie/terrain_tennessee/Tennessee_terrain_parameters.idx?access_key=PGRPNZO8ID956Y0I37JN&secret_key=6RaEChWWzSGPFPiZLNcGyGJzDtWES1l7z7K6elue&endpoint_url=https://s3.us-east-1.wasabisys.com&cached=arco"
     else:
         remote_dir = "idx_data/Tennessee_terrain_parameters.idx"
 
