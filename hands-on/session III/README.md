@@ -46,10 +46,9 @@ By the end of the tutorial, you will learn how to:
  2. [Option 1: GitHub Codespaces (Recommended)](#option-1-GitHub-codespaces-recommended)
  3. [Option 2: Local Machine](#option-2-local)
  5. [Community and Resources](#community-and-resources)
- 7. [Publications](#publications)
- 8. [Copyright and License](#copyright-and-license)
- 9. [Authors](#authors)
- 10. [Acknowledgments](#acknowledgments)
+ 6. [Authors](#authors)
+ 7. [Related Works](#Related-Works)
+ 8. [Acknowledgments](#acknowledgments)
  
 ## Running the Tutorial
 ### Option 1: GitHub Codespaces (Recommended)
