@@ -1,7 +1,7 @@
 # **NSDF Tutorial: Using NSDF for End-to-End Analysis of Scientific Data - Petascale Ocean Data**
 
 <p align="center">
-    <img src="images/Logos.png" width="450">
+    <img src="images/logo_combined.png" width="450">
 </p>
 
 <p align="center">
