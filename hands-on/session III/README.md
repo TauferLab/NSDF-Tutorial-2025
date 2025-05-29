@@ -1,18 +1,58 @@
-## Publicly Deployed Dashboards
-Publicly available dashboards for different purposed can be available from the links below. 
+# **NSDF Tutorial: Using NSDF for End-to-End Analysis of Scientific Data - Petascale Ocean Data**
 
--  NASA Petascale Climate Data Exploration
-[```https://chpc3.nationalsciencedatafabric.org:11957/```](https://chpc3.nationalsciencedatafabric.org:11957/)
+<p align="center">
+    <img src="images/Logos.png" width="450">
+</p>
 
-- NASA Coupled Dashboard for studying relationships between oceanic and atmospheric variables
-[```https://chpc3.nationalsciencedatafabric.org:11857/run```](https://chpc3.nationalsciencedatafabric.org:11857/run)
+<p align="center">
+<a href="https://www.python.org/downloads/release/python-310/"><img alt="Python 3.10" src="https://img.shields.io/badge/Python-3.10-3776AB.svg?style=flat&logo=python&logoColor=white"></a>
+<a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-green.svg"></a>
+<a href="https://nsdf-workspace.slack.com/"><img alt="Slack" src="https://badges.aleen42.com/src/slack.svg"></a>
+<a href="https://www.docker.com"><img alt="Docker" src="https://badges.aleen42.com/src/docker.svg"></a>
+<a href="https://github.com/astral-sh/ruff"><img alt="Ruff" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json"></a>
+<a href="https://doi.org/10.5281/zenodo.10794642"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.10794642.svg"></a>
+<a href="https://dl.acm.org/doi/10.1145/3588195.3595941"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1145/3588195.3595941.svg"></a>
+<a href="https://research.ibm.com/publications/enabling-scalability-in-the-cloud-for-scientific-workflows-an-earth-science-use-case"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1109/CLOUD60044.2023.00052.svg"></a>
+<a href="https://ieeexplore.ieee.org/document/9041768"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1109/eScience.2019.00008.svg"></a>
+<a href="http://doi.org/10.1145/582034.582036"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1145/582034.582036.svg"></a>
+<a href="https://www.taylorfrancis.com/chapters/edit/10.1201/b12985-32/visus-visualization-frame[…]a-gyulassy-cameron-christensen-sujin-philip-sidharth-kumar"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1201/b12985.svg"></a>
+<a href="https://doi.org/10.1145/1944846.1944847"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.1145/1944846.1944847.svg"></a>
+</p>
 
-- NASA NEX-GDDP-CMIP6 Dataset
-[```https://chpc3.nationalsciencedatafabric.org:12347/```](https://chpc3.nationalsciencedatafabric.org:12347)
 
-## Instructions to launch dashboard using NASA LLC2160 dataset from your machine or Github Codespaces
+
+## Overview
+
+This section of the tutorial introduces access to a petascale climate dataset hosted on the <a href ="https://osg-htc.org/services/osdf"> Open Science Data Federation (OSDF)</a> and distributed across three storage origins. The dataset is accessible through the <a href="https://pelicanplatform.org/"> Pelican platform </a> via direct URLs. It walks users through retrieving the data, performing basic statistical analyses, querying downsampled data for faster exploration, and extracting specific subregions for detailed study using scalable, cloud-native tools.
+ 
+By the end of the tutorial, you will learn how to:
+
+- **Access publicly available petascale datasets** 
+
+- Treat the petascale data as a NumPy array and **perform statistical analysis**
+
+- Use the NSDF dashboard for **large-scale data access, visualization, and analysis**.
+
+<p align="center">
+    <img src="images/workflow.png" width="800">
+    <br>
+    <em>Figure 1. Workflow diagram illustrating the tutorial's process of data retrieval, visualization and downsampled analysis using the  NSDF services.</em>
+</p>
+
  ----
-## Running the Tutorial with GitHub Codespaces
+ ## Table of contents
+ 
+ 1. [Running the Tutorial](#running-the-tutorial)
+ 2. [Option 1: GitHub Codespaces (Recommended)](#option-1-GitHub-codespaces-recommended)
+ 3. [Option 2: Local Machine](#option-2-local)
+ 5. [Community and Resources](#community-and-resources)
+ 7. [Publications](#publications)
+ 8. [Copyright and License](#copyright-and-license)
+ 9. [Authors](#authors)
+ 10. [Acknowledgments](#acknowledgments)
+ 
+## Running the Tutorial
+### Option 1: GitHub Codespaces (Recommended)
 
 > :bulb: **Note:** To follow this tutorial using the GitHub Codespaces you must have a GitHub Account
 
@@ -24,7 +64,7 @@ Please click the next button to open in GitHub Codespaces
 
 Now follow these steps to set up your virtual environment using GitHub codespaces:
 
-Verify that you are using the `main` branch, the repository name `nsdf-fabric/Tutorial_2024_IEEE_VIS` and the dev container configuration `NSDF Tutorial - Session III`. Then click on `Create Codespace`
+Verify that you are using the `main` branch, the repository name `TauferLab/NSDF-Tutorial-2025` and the dev container configuration `NSDF Tutorial - Session III`. Then click on `Create Codespace`
 
 <p align="center">
     <img src="files/docs/codespaces.png" width="800">
@@ -87,8 +127,8 @@ Please click this link here. DO NOT copy and paste the link.
 
 
 ----
-## Running the dashboard from your local machine:
-### Basic Pre-requirements
+### Option 2: Local Machine
+#### Basic Pre-requirements
 - Download [Python](https://www.python.org/downloads/) version > 3.8 and version< 3.12 depending on your  OS
 - Install and setup latest version of [Git](https://git-scm.com/downloads) 
 
@@ -163,9 +203,25 @@ We understand that extracting a region from this huge dataset can be extremely u
 
  - *Detailed Stats*: The detailed view also shows the minimum and amximum value for the selected region. If users want to download the data locally, it also shows the approximate file size. Again, this is set to a 20 MB max so that users don't accidentally download large chunk of data in their local machine without being aware of.
 
+---
+## Community and Resources:
 
+NSDF and OpenVisus are open-source projects. Questions, discussions, and contributions are welcome. Contributions can include new packages, bug fixes, documentation, or even new core features.
+
+
+NSDF Resources:
+
+- **Slack workspace**: [nsdf-workspace](https://nsdf-workspace.slack.com/).
+- **Github Discussions**: [issues](https://github.com/nsdf-fabric/catalog-comparison-tool/issues): Discussions and Q&A.
+- **Mailing list**: [https://groups.google.com/g/nsdf](https://groups.google.com/g/nsdf) - nsdf@googlegroups.com
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/company/76216771/admin/dashboard/) 
+
+OpenVisus Resources:
+
+- **Github:** [Open Source distribution of the ViSUS capabilities](https://github.com/sci-visus/openvisus)
+- **Webpage:** [VISUS - High performance Big Data Analysis and Visualization Solutions](https://visus.org/)
  ---
- ### Contact
+ ### Authors
 
  Please feel free to contact us here for detailed information:
   - Aashish Panta [Email me](mailto:aashishpanta0@gmail.com)
@@ -177,8 +233,15 @@ We understand that extracting a region from this huge dataset can be extremely u
 
 
 1. Aashish Panta,Xuan Huang, Nina McCurdy, David Ellsworth, Amy A. Gooch, Giorgio Scorzelli, Hector Torres, Patrice Klein, Gustavo A. Ovando-Montejo, Valerio Pascucci. “Web-based Visualization and Analytics of Petascale data: Equity as a Tide that Lifts All Boats”.  LDAV 2024
-2. DYAMOND Visualization Data. https://gmao.gsfc.nasa.gov/global_mesoscale/dyamond_phaseII/data_access/
-3. DYAMOND Visualization Data  LLC2160 ocean dataset. https://data.nas.nasa.gov/viz/vizdata/DYAMOND_c1440_llc2160/GEOS/index.html.
-4. Pascucci, Valerio, et al. "The ViSUS visualization framework." High Performance Visualization. Chapman and Hall/CRC, 2012. 439-452. [Here](https://www.taylorfrancis.com/chapters/edit/10.1201/b12985-32/visus-visualization-framework-valerio-pascucci-giorgio-scorzelli-brian-summa-peer-timo-bremer-attila-gyulassy-cameron-christensen-sujin-philip-sidharth-kumar)
-5. Brian Summa, Giorgio Scorzelli, Ming Jiang, Peer-Timo Bremer, and Valerio Pascucci. 2011. Interactive editing of massive imagery made simple: Turning Atlanta into Atlantis. ACM Trans. Graph. 30, 2, Article 7 (April 2011), 13 pages. [Here](https://dl.acm.org/doi/10.1145/1944846.1944847)
+2. Pascucci, Valerio, et al. "The ViSUS visualization framework." High Performance Visualization. Chapman and Hall/CRC, 2012. 439-452. [Here](https://www.taylorfrancis.com/chapters/edit/10.1201/b12985-32/visus-visualization-framework-valerio-pascucci-giorgio-scorzelli-brian-summa-peer-timo-bremer-attila-gyulassy-cameron-christensen-sujin-philip-sidharth-kumar)
+3. Brian Summa, Giorgio Scorzelli, Ming Jiang, Peer-Timo Bremer, and Valerio Pascucci. 2011. Interactive editing of massive imagery made simple: Turning Atlanta into Atlantis. ACM Trans. Graph. 30, 2, Article 7 (April 2011), 13 pages. [Here](https://dl.acm.org/doi/10.1145/1944846.1944847)
 
+## Acknowledgments
+
+The authors of this tutorial would like to express their gratitude to:
+
+- NSF through the awards 2138811, 2103845, 2334945, 2138296, and 2331152.
+- NASA Ames Research Center and NASA JPL
+- Open Science Data Federation (OSDF) and Pelican Platform Team
+
+Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.

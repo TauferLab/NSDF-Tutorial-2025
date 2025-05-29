@@ -30,7 +30,7 @@ By the end of the tutorial, you will learn how to:
 
 - **Build a modular workflow** that integrates your application with NSDF services
 
-- ***Upload, download, and stream data** across **public and private storage** platforms
+- **Upload, download, and stream data** across **public and private storage** platforms
 
 - Use the NSDF dashboard for **large-scale data access, visualization, and analysis**.
 
