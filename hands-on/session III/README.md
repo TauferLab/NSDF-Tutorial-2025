@@ -82,14 +82,14 @@ Verify that you are using the `main` branch, the repository name `TauferLab/NSDF
 This will take you to a GitHub Codespace, which can take upto 3 minutes to install all required dependencies. After this, you will be able to see an interface like this. Now, do the following:
 
 - Browse `hands-on/session III`
-- Select a Jupyter Notebook you want
+- Select the Jupyter Notebook: `3.Tutorial_PetascaleAnalysis.ipynb`. See `Figure 4` below for reference.
 - Click 'Run All'. (See images below for reference)
 - A popup will apprear asking you to select Kernel. From there, select 'Python Environments'
-- Select 'OpenVisus-NASA'
+- Select 'NSDF-Tutorial (Python 3.10.17)'
 
 <figure>
-    <img src="images/codespace2.png" alt="drawing" width="400"/>
-    <figcaption></figcaption>
+    <img src="images/steps.jpg" alt="drawing" width="400"/>
+    <figcaption>Figure 4. Steps to access the jupyter notbook.</figcaption>
 </figure>
 </br>
 
@@ -115,14 +115,6 @@ You can explore the jupyter notebooks now.
 
 To launch the dashboard from here, open terminal from the VS code itself and do `sh setup.sh`. This will download other remaining dependencies. It will look like this image [Scroll to Installation](#installation-terminal)
 
-
-After this installation is completed, click on the url at the end of the terminal, and it will automatically redirect you to the forwarded port with codespace. It looks like this:
-<figure>
-    <img src="images/link.png" alt="drawing" width="400"/>
-    <figcaption>Step 6: Follow the link</figcaption>
-</figure>
-
-Please click this link here. DO NOT copy and paste the link. 
 
 
 ----
