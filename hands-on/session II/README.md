@@ -71,16 +71,16 @@ You can choose one of the two options below based on your preferred setup.
   <p><strong>Requirements:</strong> A GitHub account. No software installation required.</p>
   <p>
     <a href="https://github.com/codespaces/new/TauferLab/NSDF-Tutorial-2025?devcontainer_path=.devcontainer/session+II/devcontainer.json">
-      <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces">
-    </a>
+      <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"> 
+    </a> <= Click here to take you to create a new codespace
   </p>
   <ol>
-    <li>Use the <strong>main</strong> branch of the repository.</li>
     <li>Repository: <code>TauferLab/NSDF-Tutorial-2025</code>.</li>
+    <li>Use the <strong>main</strong> branch of the repository.</li>
     <li>Dev container: <code>NSDF Tutorial – Session II</code>.</li>
     <li>Click <strong>Create Codespace</strong>.</li>
   </ol>
-  <p>This process may take a few minutes. Once ready, run <code>Tutorial.ipynb</code> in Jupyter.</p>
+  <p>This process may take a few minutes. Once ready, run <code>Hands-on/session II/Tutorial.ipynb</code> in Jupyter.</p>
   <div align="center">
     <img src="Materials/files/docs/codespaces.png" width="800">
     <br><em>Figure 1. Creating GitHub Codespaces</em>
@@ -93,7 +93,11 @@ You can choose one of the two options below based on your preferred setup.
     <img src="Materials/files/docs/vscode.png" width="800">
     <br><em>Figure 3. VS Code interface in Codespaces</em>
   </div>
-
+  After the creation of the codespace, proceed to Session II by clicking in the file <a href="./1.Tutorial.ipynb">hands-on/session II/1.Tutorial.ipynb</a> 
+  <div align="center">
+    <img src="Materials/files/docs/tutorial.png" width="800">
+    <br><em>Figure 4. Opening the tutorial file</em>
+  </div>
 
 ## Option 2: Docker
   <p><strong>Requirements:</strong> Git, Docker Desktop (v4.15.10 or newer), 8 GB RAM, 5 GB disk space (See Appendix for more information on the installation.</p>
