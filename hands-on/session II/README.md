@@ -34,7 +34,7 @@ By the end of the tutorial, you will learn how to:
 
 - Use the NSDF dashboard for **large-scale data access, visualization, and analysis**.
 
-You can download the introductory slides [here](https://zenodo.org/records/10794642). The tutorial follows the process shown in Figure 1.
+You can download the introductory slides [here](https://drive.google.com/file/d/16IKgoejeKarthKd4u6rWI52I2Gu4AChb/view?usp=sharing). The tutorial follows the process shown in Figure 1.
 
 <p align="center">
     <img src="Materials/files/docs/arq.png" width="800">
