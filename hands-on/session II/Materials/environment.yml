@@ -21,4 +21,4 @@ dependencies:
   - pip
   - pip:
       - panel==1.3.8
-      - OpenVisusNoGui==2.2.128
+      - OpenVisusNoGui==2.2.149

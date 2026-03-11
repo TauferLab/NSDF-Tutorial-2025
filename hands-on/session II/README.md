@@ -49,8 +49,9 @@ You can download the introductory slides [here](https://drive.google.com/file/d/
 1. [Running the Tutorial](#running-the-tutorial)
 2. [Option 1: GitHub Codespaces (Recommended)](#option-1-GitHub-codespaces-recommended)
 3. [Option 2: Docker](#0ption-2-docker)
-4. [APPENDIX: Prerequities for Docker](#appendix-prerequities-for-docker)
-5. [Community and Resources](#community-and-resources)
+4. [Option 3: Jetstream2](#option-3-jetstream2)
+5. [APPENDIX: Prerequities for Docker](#appendix-prerequities-for-docker)
+6. [Community and Resources](#community-and-resources)
 7. [Publications](#publications)
 8. [Copyright and License](#copyright-and-license)
 9. [Authors](#authors)
@@ -117,6 +118,77 @@ docker-compose up -d</code></pre>
       <pre><code>docker-compose down</code></pre>
     </li>
   </ol>
+
+## Option 3: Jetstream2
+<p><strong>Requirements:</strong> Access to a Jetstream2 instance via SSH.</p>
+
+<h4>Initial Setup (First Time Only)</h4>
+<ol>
+  <li>
+    If you do not already have a Jetstream2 instance, follow the
+    <a href="Materials/jetstream2_manual.pdf" target="_blank">
+    Jetstream2 Setup Manual
+    </a>
+    to create and connect to one.
+  </li>
+
+  <li>Connect to your Jetstream2 instance via SSH.</li>
+
+<li>
+  Clone the tutorial repository:
+  <pre><code>git clone https://github.com/TauferLab/NSDF-Tutorial-2025.git</code></pre>
+</li>
+
+  <li>
+    Navigate to the session materials directory and build the environment:
+    <pre><code>cd NSDF-Tutorial-2025/hands-on/session\ II/Materials/
+module load miniforge
+./build_jetstream_environment.sh</code></pre>
+  </li>
+
+  <li>
+    Start Jupyter Lab:
+    <pre><code>cd ..
+jupyter-ip.sh</code></pre>
+  </li>
+
+  <li>Open the Jupyter Lab URL printed in the terminal in your web browser.</li>
+
+  <li>
+    In Jupyter Lab, select the kernel named
+    <strong>NSDF-Tutorial</strong>.
+  </li>
+</ol>
+
+<h4>Starting the Environment (After Installation)</h4>
+<ol>
+  <li>
+    Load Conda:
+    <pre><code>module load miniforge
+</code></pre>
+  </li>
+
+  <li>
+    Navigate to the tutorial directory and start Jupyter:
+    <pre><code>cd hands-on/session\ II
+jupyter-ip.sh</code></pre>
+  </li>
+
+  <li>Open the Jupyter Lab URL printed in the terminal in your browser.</li>
+</ol>
+
+<h4>Accessing OpenVisuspy Dashboards</h4>
+<ol>
+  <li>
+    From your local machine, create an SSH tunnel to forward the dashboard port:
+    <pre><code>ssh -L 8989:127.0.0.1:8989 &lt;Jetstream Native SSH&gt;</code></pre>
+  </li>
+
+  <li>
+    After executing the corresponding dashboard cell in Jupyter, open your browser and navigate to:
+    <pre><code>http://localhost:8989</code></pre>
+  </li>
+</ol>
 
 
 ## APPENDIX: Prerequisites
