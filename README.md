@@ -40,6 +40,6 @@ Detailed setup instructions are provided in **Module 1**.
 
 ## Acknowledgment
 
-This material is based upon work supported by the **National Science Foundation (NSF)** under Grant No. **2138811**.2138811.
+This material is based upon work supported by the **National Science Foundation (NSF)** under Grant No. **2138811**.
 
 <!-- Security scan triggered at 2025-09-01 20:13:00 -->
