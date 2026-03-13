@@ -1,4 +1,4 @@
-# Enabling Scientific Discovery: Harnessing the Power of the National Science Data Fabric (NSDF) for Large-Scale Data Analysis
+# Tutorial: Large-Scale Scientific Data Analysis with the National Science Data Fabric (NSDF)
 
 ## Tutorial Goals
 
