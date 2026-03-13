@@ -2,24 +2,44 @@
 
 ## Abstract
 
-In this interactive half-day tutorial, participants explore the advanced applications of the National Science Data Fabric [(NSDF) services](https://nationalsciencedatafabric.org/) and comprehensive strategies for end-to-end scientific data analysis. The tutorial targets a broad audience, from researchers and students to developers and scientists, each finding valuable insights into managing and analyzing large datasets, with a particular focus on datasets exceeding 100TB. 
-Attendees gain hands-on experience constructing modular workflows, leveraging public and private data storage and streaming solutions, and deploying sophisticated visualization and analysis dashboards for scientific
-discovery. 
-The tutorial highlights NSDF's role in supporting the VIS conference's themes by providing scalable solutions for advances in visualization and visual analytics. It covers various topics, from an overview of NSDF's capabilities to addressing common pain points in data analysis to intermediate hands-on exercises using NSDF services for Earth science data and advanced applications, including handling and visualizing massive datasets in domains requiring high-resolution data management.
-Participants leave a deeper understanding of how NSDF services integrate into their research workflows to enhance data accessibility, sharing, and collaborative scientific discovery. This tutorial advances the knowledge of data-intensive computing and empowers attendees to harness the full potential of NSDF in their fields.
+In this interactive half-day tutorial, participants explore the advanced applications of the National Science Data Fabric [(NSDF) services](https://nationalsciencedatafabric.org/) and comprehensive strategies for end-to-end scientific data analysis.
 
-## Agenda
+The tutorial targets a broad audience—from researchers and students to developers and scientists—each finding valuable insights into managing and analyzing large datasets, with a particular focus on datasets exceeding **100 TB**.
 
-| **Session** | **Duration** |                                                               **Objective**                                                                |
+Attendees gain hands-on experience constructing **modular workflows**, leveraging **public and private data storage and streaming solutions**, and deploying sophisticated **visualization and analysis dashboards** for scientific discovery.
+
+The tutorial highlights NSDF's role in supporting the **VIS conference themes** by providing scalable solutions for advances in visualization and visual analytics. It covers topics ranging from an overview of NSDF capabilities and common pain points in large-scale data analysis to hands-on exercises using NSDF services for **Earth science datasets**.
+
+Advanced modules include handling and visualizing **massive datasets in domains requiring high-resolution data management**. Participants leave the tutorial with a deeper understanding of how NSDF services integrate into their research workflows to enhance **data accessibility, sharing, and collaborative scientific discovery**.
+
+This tutorial advances knowledge in **data-intensive computing** and empowers attendees to harness the full potential of NSDF in their research domains.
+
+## Tutorial Modules
+
+The tutorial is organized into **four progressive modules** that guide participants from environment setup to large-scale scientific data analysis using the **National Science Data Fabric (NSDF)**.
+
+Each module builds on the previous one and introduces increasingly advanced capabilities for data-intensive scientific workflows.
+
+
+| **Module** | **Duration** |                                                               **Objective**                                                                |
 | :---------: | :----------: | :----------------------------------------------------------------------------------------------------------------------------------------: |
 |      [I](./hands-on/session%20II/README.md)      |   30 mins    |              This session begins with an overview of the NSDF and addresses users' challenges identified through interviews.               |
 |     [II](./hands-on/session%20II/1.Tutorial.ipynb)      |    1 hour    | This session offers a hands-on experience with NSDF services, focusing on visualization and dashboard creation for Earth science datasets. |
 |     [III](./hands-on/session%20III/3.Tutorial_PetascaleAnalysis.ipynb)     |    1 hour    |            This session delves deeper into NSDF services tailored for the management and analysis of datasets exceeding 100TB.             |
 |     [IV](./hands-on/session%20III/README.md)      |   30 mins    |       This session concludes with an interactive Q&A, allowing attendees to discuss applications of NSDF in various research fields.       |
 
+## Quick Start
+
+Participants can run the tutorial using **three supported environments**:
+
+- **GitHub Codespaces** (recommended for quick access)
+- **Docker containers**
+- **ACCESS Jetstream2 cloud resources**
+
+Detailed setup instructions are provided in **Module 1**.
 
 ## Acknowledgment
 
-This material is based upon work supported by the National Science Foundation under Grant No. 2138811.
+This material is based upon work supported by the **National Science Foundation (NSF)** under Grant No. **2138811**.2138811.
 
 <!-- Security scan triggered at 2025-09-01 20:13:00 -->
