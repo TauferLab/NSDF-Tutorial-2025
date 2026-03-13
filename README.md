@@ -23,10 +23,10 @@ Each module builds on the previous one and introduces increasingly advanced capa
 
 | **Module** | **Duration** |                                                               **Objective**                                                                |
 | :---------: | :----------: | :----------------------------------------------------------------------------------------------------------------------------------------: |
-|      [I](./hands-on/session%20II/README.md)      |   30 mins    |              This session begins with an overview of the NSDF and addresses users' challenges identified through interviews.               |
-|     [II](./hands-on/session%20II/1.Tutorial.ipynb)      |    1 hour    | This session offers a hands-on experience with NSDF services, focusing on visualization and dashboard creation for Earth science datasets. |
-|     [III](./hands-on/session%20III/3.Tutorial_PetascaleAnalysis.ipynb)     |    1 hour    |            This session delves deeper into NSDF services tailored for the management and analysis of datasets exceeding 100TB.             |
-|     [IV](./hands-on/session%20III/README.md)      |   30 mins    |       This session concludes with an interactive Q&A, allowing attendees to discuss applications of NSDF in various research fields.       |
+|      [I](./hands-on/session%20II/README.md)      |   30 mins    |              Overview of the National Science Data Fabric (NSDF) and discussion of common challenges in large-scale scientific data analysis identified through user interviews. |
+|     [II](./hands-on/session%20II/1.Tutorial.ipynb)      |    1 hour    | Hands-on introduction to NSDF services, including visualization and dashboard creation using Earth science datasets. |
+|     [III](./hands-on/session%20III/3.Tutorial_PetascaleAnalysis.ipynb)     |    1 hour    |            Advanced NSDF capabilities for managing and analyzing datasets exceeding 100 TB, including scalable data access and processing workflows. |
+|     [IV](./hands-on/session%20III/README.md)      |   30 mins    |       Interactive Q&A session and discussion on how NSDF can support research across multiple scientific domains.       |
 
 ## Quick Start
 
