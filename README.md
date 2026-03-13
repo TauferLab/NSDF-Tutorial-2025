@@ -18,4 +18,8 @@ Participants leave a deeper understanding of how NSDF services integrate into th
 |     [IV](./hands-on/session%20III/README.md)      |   30 mins    |       This session concludes with an interactive Q&A, allowing attendees to discuss applications of NSDF in various research fields.       |
 
 
+## Acknowledgment
+
+This material is based upon work supported by the National Science Foundation under Grant No. 2138811.
+
 <!-- Security scan triggered at 2025-09-01 20:13:00 -->
