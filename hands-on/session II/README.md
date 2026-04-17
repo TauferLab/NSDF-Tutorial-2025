@@ -71,7 +71,7 @@ You can choose one of the two options below based on your preferred setup.
 ## Option 1: GitHub Codespaces (Recommended)
   <p><strong>Requirements:</strong> A GitHub account. No software installation required.</p>
   <p>
-    <a href="https://github.com/codespaces/new/TauferLab/NSDF-Tutorial-2025?devcontainer_path=.devcontainer/session+II/devcontainer.json">
+    <a href="https://github.com/codespaces/new/TauferLab/nsdf-tutorial?devcontainer_path=.devcontainer/session+II/devcontainer.json">
       <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"> 
     </a> <= Click here to take you to create a new codespace
   </p>
